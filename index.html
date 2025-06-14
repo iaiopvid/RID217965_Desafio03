@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Board de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <main class="board-container">
+    <h1 class="board-title">Board de tarefas</h1>
+
+    <form class="task-form" id="task-form">
+      <input type="text" placeholder="Nome da tarefa" class="input-text" id="task-title" required>
+      <input type="text" placeholder="Tags (t1, t2, ...)" class="input-text" id="task-label" required>
+      <div class="form-buttons">
+        <button type="submit" class="btn-add" id="btn-add">+</button>
+        <button type="button" class="btn-cancel" id="btn-cancel">Cancelar</button>
+      </div>
+    </form>
+
+    <ul class="task-list" id="task-list">
+      <!-- Tarefas geradas dinamicamente -->
+    </ul>
+
+    <footer class="board-footer">
+      <span id="completed-count">0 tarefa(s) concluída(s)</span>
+    </footer>
+  </main>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
